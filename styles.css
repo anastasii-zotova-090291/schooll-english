@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Nunito Sans;
     color: black;
@@ -33,7 +37,7 @@ body {
 }
 a:hover {
     text-decoration: none;
-    color:rgba(43, 116, 226, 0.831);
+    color: rgb(244, 162, 8)
 }
 p.phone {
     padding-left: 15px;
@@ -69,6 +73,7 @@ img {
 .button_head:hover {
     background-color: #78716C;
     color:#F97316;
+
 }
 .button_head {
     background-color: #F97316;
@@ -77,7 +82,8 @@ img {
     border-radius: 10px;
     padding: 15px 30px;
     border: none;
-   
+    cursor: pointer;
+    transition: linear 500ms;
 }
 .block {
     width: 100%;
@@ -156,7 +162,6 @@ h3 {
 .group-people {
     width: 500px;
     object-fit: cover;
-    margin-left: 20px;
 }
 .section_form {
     background-color: #FFEDD5;
@@ -185,6 +190,8 @@ h3 {
     border: 1px solid #D6D3D1;
     font-size: 20px;
     padding-left: 10px;
+    outline: none;
+    cursor: pointer;
 }
 .section_reviews {
     background-color: #FAFAF9;
@@ -281,6 +288,9 @@ h3 {
     padding: 10px 10px;
     margin-bottom: 10px;
     margin-top: 20px;
+    transition: linear 500ms;
+    cursor: pointer;
+    
 }
 footer {
     width: 100%;
@@ -315,3 +325,45 @@ a i:hover {
     font-size: 15px;
     font-weight: 400;
 }
+@media(max-width: 600px) {
+    .head {
+       margin-left: 20px;
+    }
+    .navigation {
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .cont_, .title2, .prices {
+        width: calc(100% / 1 - 40px);
+        margin: 20px;
+    }
+    .container_2 {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .group-people {
+        max-width: 100%;
+    }
+    .form {
+        flex-direction: column;
+        margin: 10px;
+        gap: 15px;
+    }
+    .form_input {
+        padding: 10px 15px;
+        margin: initial;
+    }
+    .reviews_ {
+        width: auto;
+        padding: 20px;
+    }
+    .contact_footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer_phone {
+        margin: 10px;
+        }
+    }
