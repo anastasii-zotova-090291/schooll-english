@@ -350,13 +350,17 @@ a i:hover {
         border:none;
         background-color: transparent;
         right: 300px;
+        color:lightgrey;
     }
     .openMenu {
-        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
         position: absolute;
-        background: #87878442;
+        background:#ff980082;
 	    transition: transform 0.5s;
-        border-radius: 8px;
+        
     }
     i.fa-bars {
         font-size: 30px;
